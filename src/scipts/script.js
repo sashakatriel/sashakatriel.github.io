@@ -100,6 +100,7 @@ function renderLeaderCard(data) {
   const nameIndex = headers.findIndex(h => /ФИО|имя|name/i.test(h));
   const name = nameIndex !== -1 ? leader[nameIndex] : 'Неизвестный';
 
+  //
   const title = document.createElement('h2');
   title.textContent = 'Лидер дня';
 
