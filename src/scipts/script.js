@@ -100,6 +100,10 @@ function renderLeaderCard(data) {
   const nameIndex = headers.findIndex(h => /ФИО|имя|name/i.test(h));
   const name = nameIndex !== -1 ? leader[nameIndex] : 'Неизвестный';
 
+  // ищем колонку с эмодзи
+  const emojiIndex = headers.findIndex(h => /Эмодзи|эмоджи|emoji/i.test(h));
+  const emoji = emojiIndex !== -1 ? leader[emojiIndex] : '';
+
   //
   const title = document.createElement('h2');
   title.textContent = 'Лидер дня';
@@ -114,10 +118,15 @@ function renderLeaderCard(data) {
   scoreElement.classList.add('score');
   scoreElement.textContent = `Рекорд: ${maxScore}`;
 
+  const emojiElement = document.createElement('p');
+  emojiElement.classList.add('emoji');
+  emojiElement.textContent = `Эмодзи: ${emoji}`;
+
   card.appendChild(title);
   card.appendChild(playerNickname);
   card.appendChild(playerName);
   card.appendChild(scoreElement);
+  card.appendChild(emojiElement);
 
   return card;
 }
