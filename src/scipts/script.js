@@ -117,7 +117,7 @@ function renderLeaderCard(data) {
   card.appendChild(title);
   card.appendChild(playerNickname);
   card.appendChild(playerName);
-  scoreElement.appendChild(score);
+  scoreElement.appendChild(scoreElement);
 
   return card;
 }
