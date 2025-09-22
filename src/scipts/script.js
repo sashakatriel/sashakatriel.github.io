@@ -70,10 +70,10 @@ function renderLeaderCard(data) {
   const headers = data[0];
   const rows = data.slice(1);
 
-  // ищем колонку "Очки" (или "Score")
-  const scoreIndex = headers.findIndex(h => /Рекорд|score/i.test(h));
+  // ищем колонку "Рекорд" (исправлено регулярное выражение)
+  const scoreIndex = headers.findIndex(h => /Рекорд|Очки|score/i.test(h));
   if (scoreIndex === -1) {
-    return document.createTextNode("Не найдена колонка 'Очки'");
+    return document.createTextNode("Не найдена колонка 'Рекорд'");
   }
 
   // находим лидера
@@ -92,7 +92,8 @@ function renderLeaderCard(data) {
   const card = document.createElement('div');
   card.classList.add('leader-card');
 
-  const nameIndex = headers.findIndex(h => /имя|name/i.test(h));
+  // ищем колонку с именем (исправлено регулярное выражение)
+  const nameIndex = headers.findIndex(h => /ФИО|имя|name/i.test(h));
   const name = nameIndex !== -1 ? leader[nameIndex] : 'Неизвестный';
 
   const title = document.createElement('h2');
@@ -101,13 +102,13 @@ function renderLeaderCard(data) {
   const player = document.createElement('p');
   player.textContent = `Игрок: ${name}`;
 
-  const score = document.createElement('p');
-  score.classList.add('score');
-  score.textContent = `Очки: ${maxScore}`;
+  const scoreElement = document.createElement('p');
+  scoreElement.classList.add('score');
+  scoreElement.textContent = `Рекорд: ${maxScore}`;
 
   card.appendChild(title);
   card.appendChild(player);
-  card.appendChild(score);
+  scoreElement.appendChild(score);
 
   return card;
 }
