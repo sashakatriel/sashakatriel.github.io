@@ -2,7 +2,7 @@ const sheetUrls = [
   // 1-й слайд: таблица
   'https://docs.google.com/spreadsheets/d/e/2PACX-1vRhq-889EBsydKAEcxMboIcb6El7oH7zgiGo_fY5Lnbt5LVEz5QW-khte-QDGwdYf7Fo73-fpvPrrRA/pub?output=tsv',
   // 2-й слайд: лидер дня
-  'вставте ссылку формата CSV'
+  'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWJKcDJUnoogu-SSswBH12M78x97eNgrMN7kJGHh9HVgY3yjbMbkUOI36uuTaGSLLwfj3ht-59ZKgt/pub?gid=0&single=true&output=csv'
 ];
 
 let currentIndex = 0;
