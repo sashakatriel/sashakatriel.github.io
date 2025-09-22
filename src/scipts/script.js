@@ -94,7 +94,7 @@ function renderLeaderCard(data) {
 
   // ищем колонку с ником
   const nicknameIndex = headers.findIndex(h => /Лидер дня|ник|nickname/i.test(h));
-  const nickname = nameIndex !== -1 ? leader[nicknameIndex] : 'Неизвестный';
+  const nickname = nicknameIndex !== -1 ? leader[nicknameIndex] : 'Неизвестный';
 
   // ищем колонку с именем
   const nameIndex = headers.findIndex(h => /ФИО|имя|name/i.test(h));
