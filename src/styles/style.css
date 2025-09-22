@@ -3,12 +3,9 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
-  background: #0b1020;
-  color: #fff;
+  background: #ffffff;
   font-family: sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
 }
 
 .slider {
@@ -16,6 +13,7 @@ body {
   width: 80%;
   max-width: 900px;
   overflow: hidden;
+  color:#fff;
 }
 
 .slider table {

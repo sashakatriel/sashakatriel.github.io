@@ -144,10 +144,10 @@ document.querySelector('.next').addEventListener('click', () => {
   }
 });
 
-setInterval(() => {
+/*setInterval(() => {
   if (slides.length > 0) {
     showSlide((currentIndex + 1) % slides.length);
   }
-}, 10000);
+}, 10000);*/
 
 loadAllSheets();
