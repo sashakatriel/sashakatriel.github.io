@@ -1,6 +1,6 @@
 const sheetUrls = [
   // 1-й слайд: таблица
-  'https://docs.google.com/spreadsheets/d/e/2PACX-1vRhq-889EBsydKAEcxMboIcb6El7oH7zgiGo_fY5Lnbt5LVEz5QW-khte-QDGwdYf7Fo73-fpvPrrRA/pub?gid=0&single=true&output=tsv',
+  'https://docs.google.com/spreadsheets/d/e/2PACX-1vRhq-889EBsydKAEcxMboIcb6El7oH7zgiGo_fY5Lnbt5LVEz5QW-khte-QDGwdYf7Fo73-fpvPrrRA/pub?output=tsv',
   // 2-й слайд: лидер дня
   'вставте ссылку формата CSV'
 ];
