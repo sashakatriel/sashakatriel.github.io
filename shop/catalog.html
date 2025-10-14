@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-магазин | Саша Катриэль ИС313</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Nunito:wght@400;700&family=Patrick+Hand&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <link rel="stylesheet" href="/src/styles/shop/style.css">
+    <link rel="icon" href="/src/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/src/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <a href="/index.html">
+            <h1>SashaKatriel.GitHub.IO</h1>
+        </a>
+        <h1>Интернет-магазин</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="/shop/index.html" class="nav-link">Главная</a>
+            </li>
+            <li class="nav-item">
+                <a href="/shop/catalog.html" class="nav-link">Каталог</a>
+            </li>
+            <li class="nav-item">
+                <a href="/shop/login.html" class="nav-link">Вход</a>
+            </li>
+            <li class="nav-item">
+                <a href="/shop/register.html" class="nav-link">Регистрация</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="catalog-container">
+            <aside class="sidebar">
+                <h2>🎯 Категории</h2>
+                <ul class="categories">
+                    <li class="category-item">
+                        <a href="#" class="category-link active">
+                            Все игрушки
+                            <span class="category-count">5</span>
+                        </a>
+                    </li>
+                    <li class="category-item">
+                        <a href="#" class="category-link">
+                            🧩 Конструкторы
+                            <span class="category-count">0</span>
+                        </a>
+                    </li>
+                    <li class="category-item">
+                        <a href="#" class="category-link">
+                            🧸 Игрушки
+                            <span class="category-count">5</span>
+                        </a>
+                    </li>
+                    <li class="category-item">
+                        <a href="#" class="category-link">
+                            🎮 Настольные игры
+                            <span class="category-count">0</span>
+                        </a>
+                    </li>
+                    <li class="category-item">
+                        <a href="#" class="category-link">
+                            🎨 Творчество
+                            <span class="category-count">0</span>
+                        </a>
+                    </li>
+                    <li class="category-item">
+                        <a href="#" class="category-link">
+                            🚗 Машинки и техника
+                            <span class="category-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+
+            <main>
+                <div>
+                    <h1>Каталог игрушек</h1>
+                    <div>
+                        <select>
+                            <option>По популярности</option>
+                            <option>По цене (сначала дешевые)</option>
+                            <option>По цене (сначала дорогие)</option>
+                            <option>По новизне</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-badge">Акция</div>
+                        <img src="/src/images/catalog/1.png" alt="Конструктор LEGO" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Фигурки My Little Pony Hasbro 8 см</h3>
+                            <p class="product-description">Идеальный первый пони</p>
+                            <div class="product-price">
+                                <div>
+                                    <span class="price-current">1 360₽</span>
+                                    <span class="price-old">1 700₽</span>
+                                </div>
+                                <div class="product-rating">⭐ 4.8</div>
+                            </div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="/src/images/catalog/2.png" alt="Плюшевый мишка" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Фигурки My Little Pony Hasbro 6 шт</h3>
+                            <p class="product-description">Разнообразие персонажей</p>
+                            <div class="product-price">
+                                <div>
+                                    <span class="price-current">2 121₽</span>
+                                </div>
+                                <div class="product-rating">⭐ 4.9</div>
+                            </div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-badge">Новинка</div>
+                        <img src="/src/images/catalog/3.png" alt="Настольная игра" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Фигурки TAKARA TOMY Принцессы 14 С</h3>
+                            <p class="product-description">Высокая детализация</p>
+                            <div class="product-price">
+                                <div>
+                                    <span class="price-current">2 388₽</span>
+                                </div>
+                                <div class="product-rating">⭐ 4.7</div>
+                            </div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="/src/images/catalog/4.png" alt="Набор для творчества" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Фигурки Hasbro Принцессы 14 См</h3>
+                            <p class="product-description">Коллекционная ценность</p>
+                            <div class="product-price">
+                                <div>
+                                    <span class="price-current">1 200₽</span>
+                                    <span class="price-old">1 500₽</span>
+                                </div>
+                                <div class="product-rating">⭐ 4.6</div>
+                            </div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-badge">Хит</div>
+                        <img src="/src/images/catalog/5.png" alt="Радиоуправляемая машинка" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Фигурки My Little Pony, игрушки для девочек 14 см</h3>
+                            <p class="product-description">Универсальность использования</p>
+                            <div class="product-price">
+                                <div>
+                                    <span class="price-current">3 199₽</span>
+                                    <span class="price-old">3 999₽</span>
+                                </div>
+                                <div class="product-rating">⭐ 4.5</div>
+                            </div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Саша Катриэль ИС313</p>
+    </footer>
+</body>
+
+</html>
