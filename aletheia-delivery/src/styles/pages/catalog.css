@@ -1,0 +1,169 @@
+/* каталог */
+
+.catalog-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.catalog-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.catalog-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tariffs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.tariff-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.tariff-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.tariff-header {
+    background: #4a6fa5;
+    color: white;
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.tariff-header.express {
+    background: #ff6b35;
+}
+
+.tariff-header.business {
+    background: #2a9d8f;
+}
+
+.tariff-header.special {
+    background: #6a4c93;
+}
+
+.tariff-name {
+    font-size: 1.8rem;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+
+.tariff-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.tariff-content {
+    padding: 25px 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.tariff-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+    flex-grow: 1;
+}
+
+.tariff-features li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee;
+    font-size: 0.95rem;
+}
+
+.tariff-features li:last-child {
+    border-bottom: none;
+}
+
+.tariff-features strong {
+    color: #333;
+}
+
+.tariff-button {
+    background: #4a6fa5;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+    margin-top: auto;
+}
+
+.tariff-button:hover {
+    background: #3a5a80;
+}
+
+.express-button {
+    background: #ff6b35;
+}
+
+.express-button:hover {
+    background: #e55a2b;
+}
+
+.business-button {
+    background: #2a9d8f;
+}
+
+.business-button:hover {
+    background: #238277;
+}
+
+.special-button {
+    background: #6a4c93;
+}
+
+.special-button:hover {
+    background: #5a3f7d;
+}
+
+.tariff-note {
+    background: #f8f9fa;
+    border-left: 4px solid #4a6fa5;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.tariff-note p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.calculator-link {
+    color: #4a6fa5;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.calculator-link:hover {
+    text-decoration: underline;
+}
