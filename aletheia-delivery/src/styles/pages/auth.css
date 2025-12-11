@@ -1,0 +1,222 @@
+/* стили для страниц вход и регистрация */
+.auth-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.auth-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, rgb(70, 180, 100) 0%, rgb(30, 142, 222) 100%);
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.auth-header h2 {
+    color: #1c1b22;
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, rgb(70, 180, 100), rgb(30, 142, 222));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.auth-subtitle {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 5px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: rgb(70, 180, 100);
+    box-shadow: 0 0 0 3px rgba(70, 180, 100, 0.2);
+}
+
+.form-group input.error {
+    border-color: #ff4444;
+    box-shadow: 0 0 0 3px rgba(255, 68, 68, 0.2);
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.checkbox-group label {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+.checkbox-group a {
+    color: rgb(30, 142, 222);
+    text-decoration: none;
+}
+
+.checkbox-group a:hover {
+    text-decoration: underline;
+}
+
+.auth-btn {
+    background: linear-gradient(45deg, rgb(70, 180, 100) 0%, rgb(157, 207, 157) 100%);
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+}
+
+.auth-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(70, 180, 100, 0.3);
+}
+
+.auth-btn:active {
+    transform: translateY(0);
+}
+
+.auth-links {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.auth-links p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.auth-link {
+    color: rgb(30, 142, 222);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.auth-link:hover {
+    color: rgb(70, 180, 100);
+    text-decoration: underline;
+}
+
+.auth-info {
+    margin-top: 30px;
+    padding: 20px;
+    background: linear-gradient(135deg, #f8fbf3 0%, #f0f8ff 100%);
+    border-radius: 10px;
+    border-left: 4px solid rgb(70, 180, 100);
+}
+
+.auth-info h4 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.auth-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.auth-info li {
+    padding: 5px 0;
+    padding-left: 20px;
+    position: relative;
+    color: #555;
+    font-size: 14px;
+}
+
+.auth-info li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: rgb(70, 180, 100);
+    font-weight: bold;
+}
+
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-password:hover {
+    color: #333;
+}

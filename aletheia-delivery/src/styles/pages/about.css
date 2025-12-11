@@ -1,0 +1,328 @@
+/* блок страницы "О нас" */
+
+.about-hero {
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    background: linear-gradient(135deg, rgba(70, 180, 100, 0.1) 0%, rgba(30, 142, 222, 0.1) 100%);
+    border-radius: 20px;
+}
+
+.about-hero h1 {
+    font-size: 42px;
+    line-height: 42px;
+    color: #1c1b22;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, rgb(70, 180, 100), rgb(30, 142, 222));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.about-hero p {
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.about-stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.stat-card {
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+    padding: 30px 20px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+}
+
+.stat-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-number {
+    font-size: 36px;
+    font-weight: 700;
+    color: rgb(70, 180, 100);
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.about-values {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.value-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: all 0.3s ease;
+    border-top: 5px solid transparent;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.value-card:nth-child(1) {
+    border-top-color: rgb(70, 180, 100);
+}
+
+.value-card:nth-child(2) {
+    border-top-color: rgb(30, 142, 222);
+}
+
+.value-card:nth-child(3) {
+    border-top-color: #9c27b0;
+}
+
+.value-icon {
+    font-size: 54px;
+    margin-bottom: 25px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.value-card h3 {
+    color: #1c1b22;
+    font-size: 22px;
+    margin-bottom: 15px;
+    min-height: 60px;
+}
+
+.value-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.about-mission {
+    background: linear-gradient(135deg, #1c1b22 0%, #282731 100%);
+    color: white;
+    padding: 60px 40px;
+    border-radius: 20px;
+    margin: 60px 0;
+    text-align: center;
+}
+
+.about-mission h2 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 25px;
+    background: linear-gradient(90deg, rgb(157, 207, 157), rgb(100, 200, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.mission-text {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.mission-highlight {
+    background: linear-gradient(90deg, rgba(70, 180, 100, 0.2), rgba(30, 142, 222, 0.2));
+    padding: 30px;
+    border-radius: 16px;
+    border-left: 5px solid rgb(70, 180, 100);
+    margin-top: 30px;
+    text-align: left;
+}
+
+.mission-highlight h3 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.mission-highlight ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mission-highlight li {
+    padding: 10px 0;
+    padding-left: 30px;
+    position: relative;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.mission-highlight li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: rgb(70, 180, 100);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.team-section {
+    margin: 60px 0;
+}
+
+.team-section h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #1c1b22;
+    margin-bottom: 40px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.team-member {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.member-photo {
+    height: 200px;
+    background: linear-gradient(135deg, rgba(70, 180, 100, 0.1) 0%, rgba(30, 142, 222, 0.1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    color: rgb(70, 180, 100);
+    overflow: hidden;
+}
+
+.member-photo img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.member-info {
+    padding: 25px;
+}
+
+.member-name {
+    color: #1c1b22;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.member-position {
+    color: rgb(70, 180, 100);
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.member-bio {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.about-cta {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, rgba(70, 180, 100, 0.1) 0%, rgba(30, 142, 222, 0.1) 100%);
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.about-cta h2 {
+    font-size: 32px;
+    color: #1c1b22;
+    margin-bottom: 20px;
+}
+
+.about-cta p {
+    font-size: 18px;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.primary-btn {
+    display: inline-block;
+    background: linear-gradient(45deg, rgb(70, 180, 100) 0%, rgb(157, 207, 157) 100%);
+    color: white;
+    padding: 16px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+.primary-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(70, 180, 100, 0.3);
+    text-decoration: none;
+    color: white;
+}
+
+.secondary-btn {
+    display: inline-block;
+    background: white;
+    color: rgb(70, 180, 100);
+    padding: 16px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    border: 2px solid rgb(70, 180, 100);
+    transition: all 0.3s;
+}
+
+.secondary-btn:hover {
+    background: rgb(70, 180, 100);
+    color: white;
+    transform: translateY(-3px);
+    text-decoration: none;
+}

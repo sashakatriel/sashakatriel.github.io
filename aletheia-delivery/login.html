@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Вход</title>
+    <link href="src/images/logo.ico" rel="icon">
+    <link href="src/styles/style.css" rel="stylesheet">
+    <link href="src/styles/pages/auth.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a id="line-height-none" href="index.html"><img src="src/images/logo-no-bg.png"></a>
+            <a href="index.html">
+                <h1>Алетейя</h1>
+            </a>
+        </div>
+
+        <div class="top-menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="delivery.html">Доставка</a></li>
+                    <li><a href="cart.html"><img src="src/images/cart.png">Корзина</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="user-menu">
+            Вход|<a href="register.html">Регистрация</a>
+        </div>
+    </header>
+
+    <main>
+
+        <section>
+            <div class="auth-container">
+                <div class="auth-header">
+                    <h2>Вход в личный кабинет</h2>
+                    <p class="auth-subtitle">Войдите, чтобы получить доступ к истории отправлений, управлению заказами и персональным скидкам</p>
+                </div>
+
+                <form id="loginForm" class="auth-form" action="#">
+                    <div class="form-group">
+                        <label for="email">Электронная почта</label>
+                        <input type="email" id="email" placeholder="example@mail.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Пароль</label>
+                        <div class="password-container">
+                            <input type="password" id="password" placeholder="Введите ваш пароль" required minlength="6">
+                            <button type="button" class="toggle-password"">👁️</button>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="auth-btn" id="loginBtn">
+                        <span id="loginText">Войти в систему</span>
+                    </button>
+                </form>
+
+                <div class="auth-links">
+                    <p>
+                        <a href="#" class="auth-link">Забыли пароль?</a>
+                        <a href="register.html" class="auth-link">У меня еще нет аккаунта</a>
+                    </p>
+                </div>
+
+                <div class="auth-info">
+                    <h4>Преимущества личного кабинета:</h4>
+                    <ul>
+                        <li>История всех отправлений за 2 года</li>
+                        <li>Быстрый повторный заказ</li>
+                        <li>Персональные скидки и акции</li>
+                        <li>Управление адресами доставки</li>
+                        <li>Доступ к API для бизнеса</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="privacy.html">Политика конфиденциальности</a></li>
+                <li><a href="terms.html">Пользовательское соглашение</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="separator-btm">
+
+        </div>
+        <p>Aletheia-Delivery © 2025 Все права защищены</p>
+    </footer>
+
+</body>
+
+</html>

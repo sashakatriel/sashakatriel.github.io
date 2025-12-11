@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Корзина</title>
+    <link href="src/images/logo.ico" rel="icon">
+    <link href="src/styles/style.css" rel="stylesheet">
+    <link href="src/styles/pages/cart.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a id="line-height-none" href="index.html"><img src="src/images/logo-no-bg.png"></a>
+            <a href="index.html">
+                <h1>Алетейя</h1>
+            </a>
+        </div>
+
+        <div class="top-menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="delivery.html">Доставка</a></li>
+                    <li id="selected"><img src="src/images/cart.png">Корзина</li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="user-menu">
+            <a href="login.html">Вход</a>|<a href="register.html">Регистрация</a>
+        </div>
+    </header>
+
+    <main>
+
+        <section>
+            <h3>Корзина заказов</h3>
+            
+            <div class="cart-container">
+                <div class="cart-left">
+                    <table class="cart-table">
+                        <thead>
+                            <tr>
+                                <th>Услуга</th>
+                                <th>Параметры</th>
+                                <th style="text-align: right;">Стоимость</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-items">
+                            <!-- ... -->
+                        </tbody>
+                    </table>
+                    
+                    <div class="cart-summary">
+                        <div class="summary-row">
+                            <span>Стоимость услуг:</span>
+                            <span id="subtotal">5 800 ₽</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Дополнительные услуги:</span>
+                            <span id="additional-total">1 500 ₽</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Страховка:</span>
+                            <span id="insurance-total">500 ₽</span>
+                        </div>
+                        <div class="summary-row">
+                            <strong>Итого:</strong>
+                            <span class="summary-total" id="cart-total">7 800 ₽</span>
+                        </div>
+                    </div>
+                    
+                    <button class="clear-cart-btn" id="clear-cart-btn">🗑️ Очистить корзину</button>
+                </div>
+                
+                <div class="cart-right">
+                    <div class="order-form-container">
+                        <form id="order-form">
+                            <div class="form-section">
+                                <h4>Данные отправителя</h4>
+                                <div class="form-group-row">
+                                    <div class="form-group">
+                                        <label for="sender-name" class="required">ФИО</label>
+                                        <input type="text" id="sender-name" placeholder="Иванов Иван Иванович" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="sender-phone" class="required">Телефон</label>
+                                        <input type="tel" id="sender-phone" placeholder="+7 (999) 123-45-67" required>
+                                    </div>
+                                </div>
+                                <div class="form-group-row">
+                                    <div class="form-group">
+                                        <label for="sender-email" class="required">Email</label>
+                                        <input type="email" id="sender-email" placeholder="example@mail.com" required>
+                                    </div>
+                                </div>
+                                <div class="form-group-row">
+                                    <div class="form-group">
+                                        <label for="sender-address" class="required">Адрес</label>
+                                        <input type="text" id="sender-address" placeholder="г. Москва, ул. Примерная, д. 1" required>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-section">
+                                <h4>Данные получателя</h4>
+                                <div class="form-group-row">
+                                    <div class="form-group">
+                                        <label for="receiver-name" class="required">ФИО</label>
+                                        <input type="text" id="receiver-name" placeholder="Петров Петр Петрович" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="receiver-phone" class="required">Телефон</label>
+                                        <input type="tel" id="receiver-phone" placeholder="+1 (234) 567-89-00" required>
+                                    </div>
+                                </div>
+                                <div class="form-group-row">
+                                    <div class="form-group">
+                                        <label for="receiver-address" class="required">Адрес доставки</label>
+                                        <input type="text" id="receiver-address" placeholder="г. Нью-Йорк, ул. Примерная, д. 10" required>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-section">
+                                <h4>Детали груза</h4>
+                                <div class="form-group-row">
+                                    <div class="form-group">
+                                        <label for="cargo-description" class="required">Описание груза</label>
+                                        <textarea id="cargo-description" placeholder="Документы, коммерческие образцы, оборудование и т.д." required></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group-row">
+                                    <div class="form-group">
+                                        <label for="customs-value" class="required">Стоимость для таможни ($)</label>
+                                        <input type="number" id="customs-value" placeholder="500" min="0" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="packaging-type" class="required">Тип упаковки</label>
+                                        <select id="packaging-type" required>
+                                            <option value="">Выберите тип упаковки</option>
+                                            <option value="standard">Стандартная (картонная коробка)</option>
+                                            <option value="reinforced">Усиленная (деревянный ящик)</option>
+                                            <option value="bubble">Пузырчатая пленка</option>
+                                            <option value="own">Собственная упаковка</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-section">
+                                <h4>Дополнительные услуги</h4>
+                                <div class="additional-services">
+                                    <label class="service-checkbox">
+                                        <input type="checkbox" id="insurance" data-price="500">
+                                        <div class="service-info">
+                                            <div class="service-title">Страхование полной стоимости груза</div>
+                                            <div class="service-price-tag">+ 500 ₽</div>
+                                        </div>
+                                    </label>
+                                    <label class="service-checkbox">
+                                        <input type="checkbox" id="sms-notification" data-price="200">
+                                        <div class="service-info">
+                                            <div class="service-title">SMS-уведомления о статусе доставки</div>
+                                            <div class="service-price-tag">+ 200 ₽</div>
+                                        </div>
+                                    </label>
+                                    <label class="service-checkbox">
+                                        <input type="checkbox" id="packaging-service" data-price="800" checked>
+                                        <div class="service-info">
+                                            <div class="service-title">Профессиональная упаковка от «Алетейи»</div>
+                                            <div class="service-price-tag">+ 800 ₽</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-section">
+                                <h4>Способ оплаты</h4>
+                                <div class="payment-methods">
+                                    <div class="payment-method">
+                                        <label class="payment-option selected">
+                                            <input type="radio" name="payment" value="card" checked>
+                                            <div class="payment-icon">💳</div>
+                                            <div class="payment-details">
+                                                <div class="payment-name">Банковская карта</div>
+                                                <div class="payment-desc">Visa, Mastercard, МИР</div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="payment-method">
+                                        <label class="payment-option">
+                                            <input type="radio" name="payment" value="invoice">
+                                            <div class="payment-icon">📄</div>
+                                            <div class="payment-details">
+                                                <div class="payment-name">Счет для юридических лиц</div>
+                                                <div class="payment-desc">Оплата по реквизитам</div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="order-total">
+                                <div class="total-row">
+                                    <span>Стоимость доставки:</span>
+                                    <span id="form-subtotal">5 800 ₽</span>
+                                </div>
+                                <div class="total-row">
+                                    <span>Доп. услуги:</span>
+                                    <span id="form-additional">800 ₽</span>
+                                </div>
+                                <div class="total-row">
+                                    <span>Страховка:</span>
+                                    <span id="form-insurance">0 ₽</span>
+                                </div>
+                                <div class="total-row">
+                                    <strong>Итого к оплате:</strong>
+                                    <span class="final-total" id="form-total">6 600 ₽</span>
+                                </div>
+                            </div>
+                            
+                            <div class="agreement-checkbox">
+                                <input type="checkbox" id="terms-agreement" required>
+                                <label for="terms-agreement">
+                                    Я подтверждаю, что ознакомлен и согласен с <a href="terms.html">Правилами доставки</a> и <a href="terms.html">Пользовательским соглашением</a>. Я подтверждаю корректность указанных данных и принимаю условия обработки персональных данных.
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="pay-btn" id="pay-btn">
+                                <span class="btn-text">💳 Перейти к оплате</span>
+                                <span class="loading-spinner"></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="privacy.html">Политика конфиденциальности</a></li>
+                <li><a href="terms.html">Пользовательское соглашение</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="separator-btm">
+
+        </div>
+        <p>Aletheia-Delivery © 2025 Все права защищены</p>
+    </footer>
+
+</body>
+
+</html>

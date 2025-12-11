@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Доставка</title>
+    <link href="src/images/logo.ico" rel="icon">
+    <link href="src/styles/style.css" rel="stylesheet">
+    <link href="src/styles/pages/delivery.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a id="line-height-none" href="index.html"><img src="src/images/logo-no-bg.png"></a>
+            <a href="index.html">
+                <h1>Алетейя</h1>
+            </a>
+        </div>
+
+        <div class="top-menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li id="selected">Доставка</li>
+                    <li><a href="cart.html"><img src="src/images/cart.png">Корзина</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="user-menu">
+            <a href="login.html">Вход</a>|<a href="register.html">Регистрация</a>
+        </div>
+    </header>
+
+    <main>
+
+         <section>
+            <div class="delivery-process">
+                <h2>Как работает наша доставка</h2>
+                
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-icon">📋</div>
+                        <h3>Запрос</h3>
+                        <p>Вы оформляете заявку на сайте или связываетесь с нашим менеджером. Мы помогаем подобрать оптимальный вариант доставки и рассчитать стоимость.</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-icon">📦</div>
+                        <h3>Расчёт и забор</h3>
+                        <p>Мы согласовываем детали доставки, выставляем счёт и организуем забор груза в удобное для вас время. Забор доступен 24/7 в большинстве городов.</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-icon">🚚</div>
+                        <h3>Обработка и логистика</h3>
+                        <p>Груз проходит профессиональную упаковку, сортировку, таможенную очистку и отправляется оптимальным маршрутом с использованием современных систем логистики.</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-icon">📱</div>
+                        <h3>Отслеживание</h3>
+                        <p>В личном кабинете вы видите весь путь груза: «Принят на складе», «Таможня», «В пути», «Доставлен». Регулярные SMS и email-уведомления.</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">5</div>
+                        <div class="step-icon">✅</div>
+                        <h3>Доставка</h3>
+                        <p>Курьер вручает груз получателю с обязательным уведомлением для вас. Получатель подтверждает получение электронной подписью или QR-кодом.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tracking-section">
+                <h2>Отследить отправление</h2>
+                
+                <form id="trackingForm" class="tracking-form" action="#">
+                    <div class="tracking-input-group">
+                        <input 
+                            type="text" 
+                            class="tracking-input" 
+                            id="trackingNumber" 
+                            placeholder="Введите трек-номер (например: ALTH-2025-78945)" 
+                            required
+                            pattern="ALTH-\d{4}-\d{5}"
+                            title="Формат: ALTH-2025-XXXXX"
+                        >
+                        <button type="submit" class="tracking-btn">Найти отправление</button>
+                    </div>
+                    
+                    <div class="tracking-info">
+                        <h4>Где найти трек-номер?</h4>
+                        <p>Трек-номер указан в следующих местах:</p>
+                        <ul>
+                            <li>В электронной квитанции после оформления заказа</li>
+                            <li>В письме-подтверждении на вашей электронной почте</li>
+                            <li>В SMS-уведомлении о принятии груза</li>
+                            <li>В вашем личном кабинете в разделе "Мои отправления"</li>
+                        </ul>
+                        <p>Формат трек-номера: <strong>ALTH-2025-XXXXX</strong></p>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="privacy.html">Политика конфиденциальности</a></li>
+                <li><a href="terms.html">Пользовательское соглашение</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="separator-btm">
+
+        </div>
+        <p>Aletheia-Delivery © 2025 Все права защищены</p>
+    </footer>
+
+</body>
+
+</html>

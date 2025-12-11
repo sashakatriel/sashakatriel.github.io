@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Главная</title>
+    <link href="src/images/logo.ico" rel="icon">
+    <link href="src/styles/style.css" rel="stylesheet">
+    <link href="src/styles/pages/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="src/images/logo-no-bg.png">
+            <h1>Алетейя</h1>
+        </div>
+
+        <div class="top-menu">
+            <nav>
+                <ul>
+                    <li id="selected">Главная</li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="delivery.html">Доставка</a></li>
+                    <li><a href="cart.html"><img src="src/images/cart.png">Корзина</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="user-menu">
+            <a href="login.html">Вход</a>|<a href="register.html">Регистрация</a>
+        </div>
+    </header>
+
+    <main>
+
+        <section>
+            <h3>Специальные предложения</h3>
+            <p>Новым клиентам — <strong>скидка 15% на первый заказ!</strong></p>
+
+            <div class="calculation-form">
+                <h3 style="margin-bottom: 20px;">Рассчитайте стоимость доставки за 2 минуты</h3>
+                <form id="deliveryCalculator" action="#">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="from">Откуда</label>
+                            <input type="text" id="from" placeholder="Страна, город" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="to">Куда</label>
+                            <input type="text" id="to" placeholder="Страна, город" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cargoType">Тип груза</label>
+                            <select id="cargoType" required>
+                                <option value="" disabled selected>Выберите тип</option>
+                                <option value="documents">Документы</option>
+                                <option value="parcel">Посылка (до 10 кг)</option>
+                                <option value="box">Коробка (10-25 кг)</option>
+                                <option value="business">Бизнес-груз (25+ кг)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="weight">Приблизительный вес (кг)</label>
+                            <input type="number" id="weight" placeholder="Например: 5" min="0.1" step="0.1" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="calculate-btn">
+                        Получить расчёт
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <h3>Почему выбирают Алетейю</h3>
+            <p>Более 10 000 компаний и частных лиц доверяют нам свои отправления ежегодно. Вот почему мы — лидер в
+                международной доставке:</p>
+
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">🚀</div>
+                    <h4>Скорость и надежность</h4>
+                    <p>Доставка документов и грузов в 150+ стран мира. 95% отправлений прибывают в срок или раньше.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">🛡️</div>
+                    <h4>Полная безопасность</h4>
+                    <p>Каждый груз застрахован на сумму до 500 000₽. Используем трекинг в реальном времени и уникальные
+                        коды безопасности.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">💼</div>
+                    <h4>Профессионализм</h4>
+                    <p>Команда с 15-летним опытом в логистике. Работаем с юридическими лицами и индивидуальными
+                        предпринимателями.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">🌍</div>
+                    <h4>Глобальное покрытие</h4>
+                    <p>Собственные представительства в 20 странах и партнерская сеть в 130+ государствах. Таможенное
+                        оформление "под ключ".</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Нам доверяют</h3>
+            <p>Более 5000 положительных отзывов от наших клиентов</p>
+
+            <div class="testimonials">
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <img src="src/images/avatars/1.jpg" alt="Александр" class="testimonial-avatar">
+                        <div>
+                            <div class="testimonial-name">Александр Петров</div>
+                            <div class="testimonial-company">Директор, "ТрансЛогистик"</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        "Сотрудничаем с Алетейей уже 3 года. Доставляем коммерческие образцы по всей Европе. Ни разу не
+                        было задержек или проблем с таможней. Профессионализм на высшем уровне!"
+                    </div>
+                    <div class="testimonial-rating">
+                        ★★★★★
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <img src="src/images/avatars/2.jpg" alt="Мария" class="testimonial-avatar">
+                        <div>
+                            <div class="testimonial-name">Мария Соколова</div>
+                            <div class="testimonial-company">Частный предприниматель</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        "Отправляю товары для своего интернет-магазина в США и Канаду. Алетейя — единственная компания,
+                        которая предложила действительно выгодные тарифы и берёт на себя все таможенные вопросы. Очень
+                        рекомендую!"
+                    </div>
+                    <div class="testimonial-rating">
+                        ★★★★★
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <img src="src/images/avatars/3.jpg" alt="Дмитрий" class="testimonial-avatar">
+                        <div>
+                            <div class="testimonial-name">Дмитрий Иванов</div>
+                            <div class="testimonial-company">IT-компания "ТехноСофт"</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        "Регулярно отправляем документы и оборудование в азиатские филиалы. Система отслеживания
+                        позволяет видеть каждый этап доставки. Клиенты всегда в курсе, где их груз. Надёжно и
+                        прозрачно!"
+                    </div>
+                    <div class="testimonial-rating">
+                        ★★★★☆
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="tiles">
+            <div class="tile">
+                <h3>Комфортная доставка</h3>
+                По России и за рубеж. Курьером или в пункты выдачи.
+                <img src="src/images/delivery.png">
+            </div>
+
+            <div class="tile">
+                <h3>Страхование груза</h3>
+                Компенсация - до 500 000₽
+                <img src="src/images/safe.png">
+            </div>
+
+            <div class="tile">
+                <h3>Бесплатное хранение</h3>
+                Сроком до 7 дней включительно.
+                <img src="src/images/warehouse.png">
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="privacy.html">Политика конфиденциальности</a></li>
+                <li><a href="terms.html">Пользовательское соглашение</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="separator-btm">
+
+        </div>
+        <p>Aletheia-Delivery © 2025 Все права защищены</p>
+    </footer>
+
+</body>
+
+</html>

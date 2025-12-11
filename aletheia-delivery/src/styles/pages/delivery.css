@@ -1,0 +1,217 @@
+/* блок доставки */
+
+.delivery-process {
+    max-width: 1000px;
+    margin: 0 auto 40px;
+}
+
+.delivery-process h2 {
+    text-align: center;
+    font-size: 32px;
+    line-height: 32px;
+    color: #1c1b22;
+    margin-bottom: 40px;
+    background: linear-gradient(90deg, rgb(70, 180, 100), rgb(30, 142, 222));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.process-steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.process-step {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    background: white;
+    border-radius: 16px;
+    padding: 30px 24px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    position: relative;
+    text-align: center;
+    border: 2px solid #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.process-step:hover {
+    transform: translateY(-5px);
+    border-color: rgb(157, 207, 157);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.step-number {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(45deg, rgb(70, 180, 100) 0%, rgb(157, 207, 157) 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0 4px 10px rgba(70, 180, 100, 0.3);
+}
+
+.step-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-icon img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.process-step h3 {
+    color: #1c1b22;
+    font-size: 20px;
+    margin-bottom: 15px;
+    min-height: 50px;
+}
+
+.process-step p {
+    color: #555;
+    line-height: 1.5;
+}
+
+.tracking-section {
+    background: white;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tracking-section h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #1c1b22;
+    margin-bottom: 30px;
+}
+
+.tracking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.tracking-input-group {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.tracking-input {
+    flex: 1;
+    min-width: 300px;
+    padding: 16px 20px;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    transition: all 0.3s;
+}
+
+.tracking-input:focus {
+    outline: none;
+    border-color: rgb(30, 142, 222);
+    box-shadow: 0 0 0 3px rgba(30, 142, 222, 0.2);
+}
+
+.tracking-btn {
+    padding: 16px 32px;
+    background: linear-gradient(45deg, rgb(70, 180, 100) 0%, rgb(157, 207, 157) 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    white-space: nowrap;
+}
+
+.tracking-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(70, 180, 100, 0.3);
+}
+
+.tracking-info {
+    background: linear-gradient(135deg, #f8fbf3 0%, #f0f8ff 100%);
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    border-left: 4px solid rgb(30, 142, 222);
+}
+
+.tracking-info h4 {
+    color: #333;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.tracking-info p {
+    color: #555;
+    line-height: 1.5;
+}
+
+.tracking-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.tracking-info li {
+    padding: 5px 0;
+    padding-left: 24px;
+    position: relative;
+    color: #555;
+}
+
+.tracking-info li:before {
+    content: "•";
+    position: absolute;
+    left: 10px;
+    color: rgb(70, 180, 100);
+    font-size: 20px;
+}
+
+.tracking-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.tracking-header h3 {
+    color: #1c1b22;
+    font-size: 22px;
+    margin: 0;
+}
+
+.tracking-status {
+    background: linear-gradient(45deg, rgb(70, 180, 100) 0%, rgb(157, 207, 157) 100%);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 500;
+}

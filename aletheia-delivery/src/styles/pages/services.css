@@ -1,0 +1,197 @@
+/* блок для услуг - карточек услуг */
+
+.services-intro {
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-intro h2 {
+    font-size: 32px;
+    line-height: 32px;
+    color: #1c1b22;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, rgb(70, 180, 100), rgb(30, 142, 222));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.services-intro p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.service-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    border-color: rgb(157, 207, 157);
+}
+
+.service-icon {
+    height: 80px;
+    background: linear-gradient(135deg, #e5fcf0 0%, #f8fbf3 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.service-icon i {
+    font-size: 42px;
+    color: rgb(70, 180, 100);
+}
+
+.service-content {
+    padding: 32px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-content h3 {
+    color: #1c1b22;
+    font-size: 22px;
+    margin-bottom: 16px;
+    min-height: 60px;
+}
+
+.service-description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.service-features {
+    background: linear-gradient(135deg, #f8fbf3 0%, #f0f8ff 100%);
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: auto;
+}
+
+.service-features h4 {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.service-features h4 i {
+    color: rgb(30, 142, 222);
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+}
+
+.feature-list li {
+    padding: 6px 0;
+    padding-left: 24px;
+    position: relative;
+    color: #555;
+    line-height: 1.5;
+}
+
+.feature-list li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: rgb(70, 180, 100);
+    font-weight: bold;
+}
+
+.service-action {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.consult-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(45deg, rgb(70, 180, 100) 0%, rgb(157, 207, 157) 100%);
+    color: white;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.consult-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(70, 180, 100, 0.3);
+    text-decoration: none;
+    color: white;
+}
+
+.service-card:nth-child(1) .service-icon {
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+}
+
+.service-card:nth-child(1) .service-icon i {
+    color: rgb(30, 142, 222);
+}
+
+.service-card:nth-child(2) .service-icon {
+    background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
+}
+
+.service-card:nth-child(2) .service-icon i {
+    color: #9c27b0;
+}
+
+.service-card:nth-child(3) .service-icon {
+    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+}
+
+.service-card:nth-child(3) .service-icon i {
+    color: #f57c00;
+}
+
+.service-card:nth-child(4) .service-icon {
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+}
+
+.service-card:nth-child(4) .service-icon i {
+    color: #388e3c;
+}
+
+.service-card:nth-child(5) .service-icon {
+    background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+}
+
+.service-card:nth-child(5) .service-icon i {
+    color: #ffa000;
+}
